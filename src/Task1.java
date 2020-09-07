@@ -11,6 +11,4 @@ public class Task1 {
 
         System.out.println("Last number is " + s.substring(s.length() - 1));
     }
-
-
 }

@@ -10,8 +10,7 @@ public class Task2 {
         int s = reader.nextInt();
         int sum = 0;
 
-        for ( int i = 2; i >= 0; i--)
-        {
+        for (int i = 2; i >= 0; i--) {
             int delitel = (int) Math.pow(10, i);
             sum = sum + s / delitel;
             s = s % delitel;
