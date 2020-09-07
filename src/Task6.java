@@ -10,19 +10,23 @@ public class Task6 {
         if (number == 0) {
             System.out.println("Нулевое число");
         } else {
-            if (number % 2 == 0) {
-                if (number > 0) {
-                    System.out.println("Положительное четное число");
-                } else {
-                    System.out.println("Отрицательное четное число");
-                }
-            } else {
-                if (number > 0) {
-                    System.out.println("Положительное нечетное число");
-                } else {
-                    System.out.println("Отрицательное нечетное число");
-                }
-            }
+            System.out.println(sign(number) + odd(number) + "число");
+        }
+    }
+
+    static String sign(int number) {
+        if (number > 0) {
+            return "Положительное ";
+        } else {
+            return "Отрицательное ";
+        }
+    }
+
+    static String odd(int number) {
+        if (number % 2 == 0) {
+            return "четное ";
+        } else {
+            return "нечетное ";
         }
     }
 }
